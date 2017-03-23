@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<title>Bart on Time</title>
+	
+    <!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+	<div class="MainContainer">
+			<!--Header-->
+		<header>BART ON TIME</header>
+		<br>
+		<div class="travel2"><strong>TRIP NAME:</strong>
+		</div>
+		<!-- User input for Trip Name-->
+  		<div class="col-xs-6">
+    		<input type="text" class="form-control" placeholder="name">
+  		</div>
+		<div class="pickupStation"><strong>ORIGIN STATION:</strong>
+			<!-- first drop down button -->
+    		<select id="end">
+      			<option value="37.79326600000003,-122.39659">Embarcadero Station</option>
+      			<option value="37.789641000000024,-122.40095599999995">Montgomery Station</option>
+      			<option value="37.784507,-122.40772099999998">Powell Station</option>
+      			<option value="37.77989899999997,-122.41356300000007">Civic Center Station</option>
+    		</select>
+		</div>
+		<br>
+		<div class="dropoffStation"><strong>DEST. STATION:</strong>
+			<!-- second drop down button -->
+    		<select id="end">
+      			<option value="37.79326600000003,-122.39659">Embarcadero Station</option>
+      			<option value="37.789641000000024,-122.40095599999995">Montgomery Station</option>
+      			<option value="37.784507,-122.40772099999998">Powell Station</option>
+      			<option value="37.77989899999997,-122.41356300000007">Civic Center Station</option>
+    		</select>
+    	</div>
+		<br>
+<strong class="Window">DEPART TIME WINDOW:</strong>
+<br>
+	<div class="form-group">Between
+      <label for="time-input"></label>
+        <input class="form-control1" id="Start-time" type="time">
+    </div>
+    	<div class="form-group" id="And">And
+      <label for="time-input"></label>
+        <input class="form-control2" id="End-time" type="time">
+    </div>
+
+
+    <div class="travel"><strong>TRAVEL TO STATION BY (DEFAULT):</strong>
+    <br>
+    <label class="radio-inline">
+  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> WALK
+</label>
+<label class="radio-inline">
+  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">DRIVE[BETA]
+</label>
+</div>
+<br>
+<p class="yellow"></p>
+<br>
+<button class="btn btn-primary btn-lg" id="save" type="submit">SAVE</button>
+<button class="btn btn-danger btn-lg" id="cancel" type="submit">Cancel</button>
+</div>
+<div class="Trip2"></div>
+<br>
+    <div class="col-lg-12">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">BART ON TIME TRAIN STATUS</h3>
+        </div>
+       <div class="panel-body">
+        <div class="Trip2">START YOUR TRIP IN:
+			<div>
+				<p id="Minutes"><u>12 MINUTES</u></p>
+			</div>
+		</div>
+          <!-- Entry "ADD TRAIN"-->
+          <form role="form">
+            <div class="">
+             <div class="dropoffStation"><strong>YOUR NEXT TRAIN TO</strong>
+			<!-- second drop down button -->
+    		<select id="end">
+      			<option value="37.79326600000003,-122.39659">Embarcadero Station</option>
+      			<option value="37.789641000000024,-122.40095599999995">Montgomery Station</option>
+      			<option value="37.784507,-122.40772099999998">Powell Station</option>
+      			<option value="37.77989899999997,-122.41356300000007">Civic Center Station</option>
+    		</select>
+    	</div>
+            </div>
+           <div class="travel2"><strong>WILL ARRIVE IN:</strong>
+		</div>
+		<!-- User input for Trip Name-->
+  		<div class="col-xs-6">
+    		<input type="text" class="form-control" placeholder="">
+  		</div>
+            <div class="form-group">
+              <label for="time-input">AVG WALKING TIME TO STATION:</label>
+            </div>
+            <div class="form-group">
+              <label for="Traffictime-output">CURRENT TRAFFIC TO STATION[BETA]:</label>
+              
+            </div>
+          
+          </form>
+
+        </div>
+      </div>
+    </div>
+<style type="text/css">
+	header{
+	background: #428bca;
+	text-align: center;
+	font-size: 50px;
+	color: white;
+}
+.form-group{
+	float: left;
+	clear: both;	
+}
+.form-control2{
+	clear: both;
+	float: right;
+}
+.travel, .travel2{
+	clear: both;
+	float: left;
+}
+.radio-inline{
+	clear: both;
+
+}
+.pickupStation{
+	float: left;
+	clear: both;
+	margin-top: 20px;
+}
+.dropoffStation{
+	float: left;
+	clear: both;
+	margin-top: 20px;
+
+}
+.Window{
+	text-align: center;
+	clear: both;
+	float: left;
+	margin-top: 20px;	
+}
+#save{
+	float: left;
+
+	
+}
+#cancel{
+	
+	float: left;
+}
+.yellow{
+	clear: both;
+}
+.MainContainer{
+	padding: 10px;
+	color: white;
+
+}
+.Trip2{
+	text-align: center;
+	font-size: 20px;
+	padding-top: 20px;
+	color: black;
+}
+#Minutes{
+	text-align: center;
+}
+#Destination-input{
+	float: right;
+	clear: both;
+}
+body{
+	background-color: gray;
+}
+</style>
+</body>
+</html>
